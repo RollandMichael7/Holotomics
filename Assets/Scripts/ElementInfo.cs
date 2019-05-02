@@ -9,7 +9,6 @@ public class ElementInfo
     {
         TextAsset text = Resources.Load<TextAsset>(path);
         ElementInfo info = JsonUtility.FromJson<ElementInfo>(text.text);
-        Debug.LogError("got json: " + info);
         return info;
     }
 
