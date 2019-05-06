@@ -3512,6 +3512,7 @@ GameObject:
   - component: {fileID: 1396866088}
   - component: {fileID: 1396866087}
   - component: {fileID: 1396866086}
+  - component: {fileID: 1396866090}
   m_Layer: 5
   m_Name: info_text
   m_TagString: Untagged
@@ -3535,8 +3536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252, y: -48.8}
-  m_SizeDelta: {x: 455.3, y: 439.3}
+  m_AnchoredPosition: {x: 252, y: -56.450012}
+  m_SizeDelta: {x: 455.3, y: 483.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396866086
 MonoBehaviour:
@@ -3576,7 +3577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3584,19 +3585,23 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_Font: {fileID: 12800000, guid: d8d51f2e7665c97458ae8f0e39b2cb00, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Hydrogen is a chemical element with symbol H and atomic number 1. With a
+    standard atomic weight of 1.008, hydrogen is the lightest element in the periodic
+    table. Hydrogen is the most abundant chemical substance in the Universe, constituting
+    roughly 75% of all mass. Hydrogen is the primary element which makes up stars.
+    The most common isotope of hydrogen has one proton and no neutrons.
 --- !u!222 &1396866089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3605,6 +3610,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396866084}
   m_CullTransparentMesh: 0
+--- !u!114 &1396866090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396866084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1627962676
 GameObject:
   m_ObjectHideFlags: 0
