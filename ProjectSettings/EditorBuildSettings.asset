@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PeriodicTable.unity
     guid: 99c02e9cd00f4b3448e0563fb889ce02
+  - enabled: 1
+    path: Assets/Scenes/ChemicalLibrary.unity
+    guid: 95f2f096905cc9a47900881c2d1925bf
   m_configObjects: {}
