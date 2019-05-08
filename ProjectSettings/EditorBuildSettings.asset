@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChemicalLibrary.unity
     guid: 95f2f096905cc9a47900881c2d1925bf
+  - enabled: 1
+    path: Assets/Scenes/Hologram.unity
+    guid: d37723d360f20404c8ed4f45062485d5
   m_configObjects: {}
