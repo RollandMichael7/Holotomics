@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class electronMovement : MonoBehaviour
+public class ElectronMover : MonoBehaviour
 {
     float speedx;
     float speedy;
@@ -11,8 +11,7 @@ public class electronMovement : MonoBehaviour
     {
         speedx = Random.Range(40, 120);
         speedy = Random.Range(40, 120);
-        speedz = 0;
-
+        speedz = Random.Range(40, 120);
     }
 
     // Update is called once per frame
