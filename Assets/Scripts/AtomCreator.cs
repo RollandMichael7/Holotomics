@@ -5,16 +5,20 @@ using UnityEngine;
 public class AtomCreator : MonoBehaviour
 {
 
-    int protons= 0;
+    int protons = 0;
     int electrons = 0;
-    int neutrons =0;
+    int neutrons = 0;
 
     private List<GameObject> particles;
 
-    public Transform positionObject; 
+    public Transform positionObject;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
+    {
+        this.particles = new List<GameObject>();
+    }
+
+    private void CreateAtom()
     {
         particles = new List<GameObject>();
 
@@ -80,7 +84,7 @@ public class AtomCreator : MonoBehaviour
 
     public void displayElement(int protons, int electrons, int neutrons)
     {
-        StartCoroutine(displayElementRoutine(protons, electrons, neutrons));
+        StartCoroutine(displayCoroutine(protons, electrons, neutrons));
     }
 
     public void destroyElement()
@@ -88,7 +92,7 @@ public class AtomCreator : MonoBehaviour
         StartCoroutine(destroyCoroutine());
     }
 
-    IEnumerator displayElementRoutine(int protons, int electrons, int neutrons)
+    IEnumerator displayCoroutine(int protons, int electrons, int neutrons)
     {
         if (particles.Count > 0) {
             foreach (GameObject particle in particles)
@@ -106,7 +110,7 @@ public class AtomCreator : MonoBehaviour
         this.protons = protons;
         this.electrons = electrons;
         this.neutrons = neutrons;
-        this.Start();
+        this.CreateAtom();
     }
 
     IEnumerator destroyCoroutine()

@@ -28,19 +28,16 @@ public class FadeMaterial : MonoBehaviour
         {
             curColor.a = Mathf.Lerp(curColor.a, targetAlpha, this.FadeRate * Time.deltaTime);
             this.mat.color = curColor;
-            print("cur alpha: " + this.mat.color.a);
         }
 
     }
     public void FadeOut()
     {
-        print("fade out");
         this.targetAlpha = 0.0f;
     }
 
     public void FadeIn()
     {
-        print("fade in");
         this.targetAlpha = 1.0f;
     }
 }
