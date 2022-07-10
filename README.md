@@ -7,3 +7,9 @@ Team members:
 - Michael Rolland
 - Bryan Moy
 - Harrison Munitz
+
+
+
+https://user-images.githubusercontent.com/14168201/178128311-51cfc196-7c19-4194-95de-45500d0460bc.mp4
+
+[UI Demo](https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/3337/files/2019/05/Holotomics_demo.mp4)
